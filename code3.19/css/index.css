@@ -1,0 +1,607 @@
+/*公共样式*/
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.zhezao {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 9999;
+}
+.txt_right{
+    text-align: right;
+    font-size: 14px;
+}
+.txt_gray{
+    font-size: 12px;
+    color:#999 ;
+    line-height: 1.8;
+}
+.txt_big{
+    font-size: 42px;
+    color: #4c4c4c;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 1.6;
+}
+.txt_pink{
+    color: #fe7678;
+    font-size: 14px;
+}
+.txt_normal{
+    font-size: 14px;
+    color: #333;
+}
+.text-center{
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0;
+}
+mark{
+    background: transparent;
+    color: #ff1717;
+    font-size: 14px;
+}
+/******************* 首页 ***********************/
+/*header*/
+.person_header{
+    background: url("../imgs/header_bg.png") no-repeat;
+    background-size: cover;
+    padding:5% 1%;
+}
+.person_header .per_icon{
+    margin: 8px 0;
+}
+.person_header .per_icon_set img{
+    float: right;
+}
+.person_header .per_icon img {
+    width:2rem;
+}
+.person_header .per_images {
+    width: 46%;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: #fff;
+}
+.person_header .per_images img{
+    width: 100%;
+    border-radius: 50%;
+}
+.per_detail li{
+    color: #fff;
+    text-align: center;
+}
+.per_detail .det_tel {
+    font-size: 16px;
+    margin: 8px 0 12px 0;
+}
+.per_detail .det_balance {
+    font-size: 14px;
+}
+.per_detail .det_money {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/*子页面模块*/
+.nav_list {
+    margin: 3%;
+}
+.nav_list .am-u-sm-6{
+    background: #fe7678;
+}
+.nav_list .am-u-sm-6 {
+    background: #fe7678;
+    border: 3px solid #fff;
+    text-align: center;
+    padding: 3% 8%;
+    border-radius: 10px;
+}
+.nav_list .am-u-sm-6 span {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 35px;
+    display: block;
+    position: relative;
+}
+
+.nav_list .am-u-sm-6 span:before {
+    content: '';
+    background: url(../imgs/nav_recharge.png) no-repeat;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    background-size: 100%;
+    top: 5px;
+    left: 40%;
+}
+.nav_list .am-u-sm-6 .nav_order:before {
+    background: url(../imgs/nav_order.png) no-repeat;
+    background-size: 100%;
+}
+.nav_list .am-u-sm-6 .nav_giftCard:before {
+    background: url(../imgs/nav_giftCard.png) no-repeat;
+    background-size: 100%;
+}
+.nav_list .am-u-sm-6 .nav_service:before {
+    background: url(../imgs/nav_service.png) no-repeat;
+    background-size: 100%;
+}
+
+/*打开二维码*/
+.open_code{
+    margin: 8% 0;
+}
+.open_code img {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*打开二维码弹框*/
+.success_lock{
+    display: none;
+    background: #fff;
+    width: 80%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border-radius: 10px;
+    z-index: 999999;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.success_lock li{
+    text-align: center;
+    line-height: 2;
+}
+.success_lock li img {
+    width: 35%;
+    display: block;
+    margin:0 auto;
+}
+
+
+/******************* 充值中心 ***********************/
+
+.am-header-default {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.am-header-default .am-header-title{
+    color: #333;
+    font-size: 16px;
+}
+.back_icon {
+    content: '';
+    background: url(../imgs/back.png) no-repeat 100%;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+.voucher_ban {
+    padding: 10%;
+}
+.voucher_ban ul li{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 2;
+}
+.voucher_ban ul .vou_money{
+    font-size: 38px;
+}
+
+
+/*交易明细*/
+.tab .am-u-sm-6 {
+    text-align: center;
+}
+.tab a {
+    color: #b3b3b3;
+    font-size: 14px;
+    padding: 5% 17%;
+    display: inline-block;
+}
+
+.tab .active {
+    border-bottom: 2px solid #fe4a4d;
+    color: #fe4a4d;
+ }
+
+ .con_title {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 3;
+     padding: 0 3%;
+     margin: 0;
+     color: #000;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.list_table{
+    background: #fff;
+    padding: 0 3%;
+}
+.list_table .list_item {
+    border-bottom: 1px solid #eee;
+    padding: 3% 0;
+    overflow: hidden;
+    clear: both;
+}
+.list_table .list_item span{
+    font-size: 14px;
+}
+.list_table .list_item .bot{
+    color: #b3b3b3;
+}
+.list_left {
+    float: left;
+}
+.list_left span {
+    display: block;
+}
+.list_right {
+    float: right;
+}
+.list_right span {
+    display: block;
+    float: right;
+    clear: both;
+}
+
+/*充值金额*/
+.list_money {
+    padding: 6% 3% 2% 3%;
+    overflow: hidden;
+}
+.list_money li {
+    float: left;
+    width: 32%;
+    text-align: center;
+    margin: 0 2% 2% 0;
+    border: 2px solid #fe7678;
+    border-radius: 8px;
+    padding: 8px;
+    color: #fe7678;
+    font-size: 16px;
+}
+.list_money li:nth-of-type(3n) {
+    margin-right: 0;
+}
+.list_money .active{
+    background: #fe7678;
+    color: #fff;
+    border: 2px solid #dcdcdc;
+}
+.pay_money {
+    text-align: center;
+    margin: 0;
+    line-height: 2;
+    color: #666;
+}
+.voucher_btn {
+    display: block;
+    background: #fe7678;
+    color: #fff;
+    border: 0;
+    width: 94%;
+    padding: 3% 0;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 10% auto;
+}
+.help_txt {
+    width: 67%;
+    font-size: 12px;
+    color: #b3b3b3;
+    text-align: center;
+    line-height: 1.8;
+    margin: 15% auto 8%;
+}
+
+/******************* 开门购物中 ***********************/
+.cart_ban{
+    background: url("../imgs/cart_ban.jpg") no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+.cart_ban p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+.cart_ban .cart_money {
+    font-size: 46px;
+    line-height: 1;
+    margin-top: 10px;
+}
+.cart_con li {
+    text-align: center;
+    font-size: 12px;
+    color: #444;
+    letter-spacing: 0.1em;
+}
+.cart_con .cart_bg img {
+    width: 28%;
+    margin: 15% 0 6%;
+}
+.cart_con .cart_txt_b {
+    font-size: 42px;
+    color: #4c4c4c;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 1.6;
+}
+.cart_con .cart_btn {
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+.cart_btn a{
+    background: #f44646;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    padding: 0.3rem 0.8rem;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+}
+
+
+/******************* 我的订单 ***********************/
+.order_contianer{
+    margin-top: 49px;
+    margin-bottom: 49px;
+}
+.order_contianer .swiper-slide{
+    background: transparent;
+}
+.order_con {
+    background: #eee;
+    overflow: hidden;
+}
+.con_list {
+    background: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.con_list .con_cen>ul>li{
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    margin: 0 1.2rem;
+}
+.con_top {
+    padding: 0.6rem 0;
+}
+.con_cen .order_img img {
+    width:100%;
+}
+.con_cen .order_detaile p {
+    margin: 0;
+    font-size: 14px;
+}
+.order_detaile{
+    padding-left: 10px;
+    padding-right: 0;
+}
+.con_cen .order_detaile .pro_det {
+    padding-top: 0.1rem;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    font-size: 12px;
+}
+.con_cen .order_num {
+    margin-top: 1.2rem;
+}
+.order_img{
+    padding: 0;
+}
+.con_bot {
+    padding: 1.2rem 0;
+}
+.con_bot .txt_right mark{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/******************* 订单详情 ***********************/
+.shop_tip {
+    text-align: center;
+    padding: 3rem 0 1.5rem;
+}
+.shop_tip li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.shop_tip img {
+    width: 22%;
+}
+
+.shop_tip .tip_txt {
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+    margin-top: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.detail_con .con_bot {
+    width: 94%;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+.detail_con .con_bot:last-child{
+    border: 0;
+}
+.detail_con .con_bot .am-u-sm-6 {
+    padding: 0;
+    font-size: 14px;
+}
+.detail_con .con_bot .txt_right mark {
+    font-size: 16px;
+    font-weight: normal;
+}
+.detail_con .con_bot .txt_right .totle_money{
+    font-size: 18px;
+    font-weight: bold;
+}
+.coupon{
+    font-size: 14px;
+}
+
+/*请选择支付方式*/
+.pay_way {
+    padding: 1.2rem 1.2rem 0;
+}
+.pay_way label {
+    font-weight: normal;
+    margin: 0;
+    display: block;
+}
+.pay_way [class*=am-u-]{
+    padding: 0;
+}
+.pay_way .am-g {
+    border-top: 1px solid #eee;
+}
+.pay_way h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 1.2rem;
+}
+.pay_icon img {
+    width:75%;
+    margin-top: 1.3rem;
+}
+.pay_txt {
+    font-size: 14px;
+    line-height: 3.5;
+}
+.pay_txt mark {
+    font-size: 12px;
+}
+.pay_way .txt_gray{
+    font-size: 12px;
+}
+.pay_input input {
+    margin-top: 18px;
+}
+
+/*确认支付*/
+.pay_sure{
+    padding: 1.2rem;
+}
+.pay_sure a {
+    background: #5acf96;
+    color: #fff;
+    display: block;
+    width: 68%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 7px;
+    font-size: 18px;
+}
+.pay_sure p{
+    text-align: center;
+}
+
+/*余额不足*/
+.shortcut_pay h3 {
+    font-weight: normal;
+    font-size: 16px;
+    background: url(../imgs/wx_icon.png) no-repeat left;
+    background-size: 6%;
+    padding-left: 30px;
+    margin: 0 1.2rem;
+    border-bottom: 1px solid #eee;
+    line-height: 3;
+}
+.shortcut_pay{
+    position: fixed;
+    top:50%;
+    background: #fff;
+    width: 90%;
+    left: 5%;
+    border-radius: 10px;
+    z-index: 99999;
+}
+.shortcut_pay .voucher_btn{
+    margin:6% auto;
+}
+
+
+.radio input {
+    position: absolute;
+    left: -2.5px;
+    top: 1.5px;
+    z-index: 999999;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio i {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    outline: 0;
+    border:1px solid #a0a0a0;
+    transition: border-color .3s;
+    -webkit-transition: border-color .3s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.radio input:checked + i {
+    background: #fe4a4d;
+    border: 0;
+}
+
+.radio input + i:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: -1px;
+    width:100%;
+    height:100%;
+    background: url("../imgs/sure_icn.png") no-repeat center;
+    background-size:65%;
+    opacity: 0;
+    transition: opacity .1s;
+    -webkit-transition: opacity .1s;
+}
+
+.radio input:checked + i:after {
+    opacity: 1;
+}
+.radio input:checked + i + span {
+    color: #00adf9;
+}
+.radio input:checked+i:after{  opacity: 1; }
+.radio img{max-width: 120px;}

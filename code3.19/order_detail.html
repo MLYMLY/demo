@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="js cssanimations am-touch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+
+    <title>订单详情</title>
+    <link rel="stylesheet" href="./files/amazeui.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body class="am-with-fixed-header am-with-fixed-navbar">
+
+<!--头部-->
+<header data-am-widget="header" class="am-header am-header-fixed am-header-default am-navbar-default wst-inner-page-nav am-no-layout">
+    <a href="javascript:history.back(-1)" class="back_icon"></a>
+    <h1 class="am-header-title">订单详情</h1>
+</header>
+
+<!--购物完成提示-->
+<div class="shop_tip">
+    <ul>
+        <li><img src="imgs/completed.png"></li>
+        <li class="tip_txt">购物已完成</li>
+        <li>— 请核对您的账单 —</li>
+    </ul>
+</div>
+
+<!--主要内容-->
+<div class="order_con detail_con">
+    <!--第一个列表-->
+    <div class="con_list">
+        <div class="am-g con_top">
+            <div class="am-u-sm-8 txt_gray">订单号：127 4856 6000 45</div>
+            <div class="am-u-sm-4 txt_right txt_gray">2018-02-08</div>
+        </div>
+        <div class="con_cen">
+            <ul>
+                <li>
+                    <div class="am-g">
+                        <div class="am-u-sm-3 order_img">
+                            <img src="imgs/exp01.jpg" alt="" title="">
+                        </div>
+                        <div class="am-u-sm-9 order_detaile">
+                            <p class="pro_name">羽衣甘蓝原叶</p>
+                            <p class="pro_det txt_gray">0农药无残留 新鲜采摘 农场直销</p>
+                            <div class="am-g order_num">
+                                <div class="am-u-sm-6 txt_gray">数量：1份</div>
+                                <div class="am-u-sm-6 txt_right">￥20.90</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="am-g">
+                        <div class="am-u-sm-3 order_img">
+                            <img src="imgs/exp01.jpg" alt="" title="">
+                        </div>
+                        <div class="am-u-sm-9 order_detaile">
+                            <p class="pro_name">羽衣甘蓝原叶</p>
+                            <p class="pro_det txt_gray">0农药无残留 新鲜采摘 农场直销</p>
+                            <div class="am-g order_num">
+                                <div class="am-u-sm-6 txt_gray">数量：1份</div>
+                                <div class="am-u-sm-6 txt_right">￥20.90</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="am-g con_bot">
+            <div class="am-u-sm-6">商品总价</div>
+            <div class="am-u-sm-6 txt_right">￥41.80</div>
+        </div>
+        <div class="am-g con_bot">
+            <div class="am-u-sm-6">商品促销优惠</div>
+            <div class="am-u-sm-6 txt_right"><mark>-￥10.00</mark></div>
+        </div>
+        <div class="am-g con_bot">
+            <div class="am-u-sm-6 ">红包/优惠券</div>
+            <div class="am-u-sm-6 txt_right coupon">无可用红包或优惠券</div>
+        </div>
+        <div class="am-g con_bot">
+           <div class="am-u-sm-12 txt_right">合计：<mark class="totle_money">￥31.08</mark></div>
+        </div>
+    </div>
+
+    <div class="con_list">
+        <div class="pay_way">
+            <h3>请选择支付方式</h3>
+            <label class="radio">
+                <div class="am-g">
+                    <div class="am-u-sm-1 pay_icon"><img src="imgs/alipay_icon.png"></div>
+                    <div class="am-u-sm-10 pay_txt txt_normal">余额支付<mark>（当前余额￥100&nbsp;余额支付立减xx元）</mark></div>
+                    <div class="am-u-sm-1 txt_right pay_input"><input name="pay_way" type="radio" checked><i class="Cboxi"></i></div>
+                </div>
+            </label>
+            <label class="radio">
+                <div class="am-g">
+                    <div class="am-u-sm-1 pay_icon"><img src="imgs/wx_icon.png"></div>
+                    <div class="am-u-sm-10 pay_txt txt_normal">微信支付<span class="txt_gray">（微信支付无优惠）</span></div>
+                    <div class="am-u-sm-1 txt_right pay_input"><input name="pay_way" type="radio"><i class="Cboxi"></i></div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="con_list pay_sure">
+        <a href="###">确认支付</a>
+        <p class="txt_gray">关门时请确认门锁落下</p>
+    </div>
+</div>
+
+
+<!--余额不足-->
+    <div class="zhezao"></div>
+    <div class="shortcut_pay" id="shortcut_pay" style="display: none">
+        <h3>请选择支付金额</h3>
+        <ul class="list_money">
+            <li class="active">6元</li>
+            <li>68元</li>
+            <li>208元</li>
+            <li>388元</li>
+            <li>698元</li>
+            <li>998元</li>
+        </ul>
+        <button class="voucher_btn">立即充值</button>
+    </div>
+
+<!--底部-->
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default am-no-layout" id="wst-footer" style="border-top:1px solid #D1D1D3;">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4" style="background-color:white;">
+        <li>
+            <a href="http://localhost/plat/Home/Index/index.html" class="footer-link" id="home">
+                <img class="wst-footer-img" src="./files/home.png" style="width:24px;height:40px;">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" onclick="javascript:toGoodsCat(440100);" class="footer-link" id="category">
+                <img class="wst-footer-img" src="./files/category.png" style="width:24px;height:40px;">
+            </a>
+        </li>
+        <li>
+            <a href="http://localhost/plat/Home/Cart/index.html" class="footer-link">
+                <img class="wst-footer-img" src="./files/cart.png" style="width:24px;height:40px;">
+            </a>
+        </li>
+        <li>
+            <a href="http://localhost/plat/Home/Users/index.html" class="footer-link" id="users">
+                <img class="wst-footer-img" src="./files/users-active.png" style="width:24px;height:40px;">
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<script type="text/javascript" src="./files/jquery.min.js.下载"></script>
+<script src="./files/amazeui.min.js.下载"></script>
+<script type="text/javascript">
+
+    //  充值金额的金额选定
+    $(".list_money li").click(function(){
+        var index=$(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
+    // 弹框
+    $(".pay_sure a").click(function(){
+        var win_height=$(window).height();
+        $("#shortcut_pay").css("top",(win_height-260)/2+"px").fadeToggle();
+        $(".zhezao").fadeToggle();
+    });
+    $(".zhezao").click(function(){
+        $(this).fadeToggle();
+        $("#shortcut_pay").fadeToggle();
+    });
+
+
+
+
+</script>
+</body>
+</html>

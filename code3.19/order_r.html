@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="js cssanimations am-touch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+
+    <title>我的订单</title>
+    <link rel="stylesheet" href="./files/amazeui.min.css">
+    <link type="text/css" href="css/loading.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<!--头部-->
+<header data-am-widget="header" class="am-header am-header-fixed am-header-default am-navbar-default wst-inner-page-nav am-no-layout">
+    <a href="javascript:history.back(-1)" class="back_icon"></a>
+    <h1 class="am-header-title">我的订单</h1>
+</header>
+
+
+<div class="swiper-container order_contianer">
+    <div class="swiper-wrapper w">
+        <div class="swiper-slide d">
+            <div class="init-loading list-group-item text-center" style="display: none;">下拉可以刷新</div>
+            <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide list-group">
+                        <!--主要内容-->
+                        <div class="order_con">
+                            <!--第一个列表-->
+                            <div class="con_list">
+                                <div class="am-g con_top">
+                                    <div class="am-u-sm-8 txt_gray">订单号：127 4856 6000 45</div>
+                                    <div class="am-u-sm-4 txt_right txt_gray">2018-02-08</div>
+                                </div>
+                                <div class="con_cen">
+                                    <ul>
+                                        <li>
+                                            <div class="am-g">
+                                                <div class="am-u-sm-3 order_img">
+                                                    <img src="imgs/exp01.jpg" alt="" title="">
+                                                </div>
+                                                <div class="am-u-sm-9 order_detaile">
+                                                    <p class="pro_name">羽衣甘蓝原叶</p>
+                                                    <p class="pro_det txt_gray">0农药无残留 新鲜采摘 农场直销</p>
+                                                    <div class="am-g order_num">
+                                                        <div class="am-u-sm-6 txt_gray">数量：1份</div>
+                                                        <div class="am-u-sm-6 txt_right"><mark>￥20.90</mark></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="am-g">
+                                                <div class="am-u-sm-3 order_img">
+                                                    <img src="imgs/exp01.jpg" alt="" title="">
+                                                </div>
+                                                <div class="am-u-sm-9 order_detaile">
+                                                    <p class="pro_name">羽衣甘蓝原叶</p>
+                                                    <p class="pro_det txt_gray">0农药无残留 新鲜采摘 农场直销</p>
+                                                    <div class="am-g order_num">
+                                                        <div class="am-u-sm-6 txt_gray">数量：1份</div>
+                                                        <div class="am-u-sm-6 txt_right"><mark>￥20.90</mark></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="am-g con_bot">
+                                    <div class="am-u-sm-6"><mark>已付款</mark></div>
+                                    <div class="am-u-sm-6 txt_right">合计：<mark>￥41.80</mark></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+
+        <div class="spinner">
+            <div class="spinner-container container1">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="spinner-container container2">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="spinner-container container3">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+        </div>
+</div>
+
+<!--底部-->
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default am-no-layout" id="wst-footer" style="border-top:1px solid #D1D1D3;">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4" style="background-color:white;">
+        <li>
+            <a href="http://localhost/plat/Home/Index/index.html" class="footer-link" id="home">
+                <img class="wst-footer-img" src="./files/home.png" style="width:24px;height:40px;">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" onclick="javascript:toGoodsCat(440100);" class="footer-link" id="category">
+                <img class="wst-footer-img" src="./files/category.png" style="width:24px;height:40px;">
+            </a>
+        </li>
+        <li>
+            <a href="http://localhost/plat/Home/Cart/index.html" class="footer-link">
+                <img class="wst-footer-img" src="./files/cart.png" style="width:24px;height:40px;">
+            </a>
+        </li>
+        <li>
+            <a href="http://localhost/plat/Home/Users/index.html" class="footer-link" id="users">
+                <img class="wst-footer-img" src="./files/users-active.png" style="width:24px;height:40px;">
+            </a>
+        </li>
+    </ul>
+</div>
+<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    var loadFlag = true;
+    var oi = 0;
+    var mySwiper = new Swiper('.swiper-container',{
+        direction: 'vertical',
+        scrollbar: '.swiper-scrollbar',
+        slidesPerView: 'auto',
+        mousewheelControl: true,
+        freeMode: true,
+        onTouchMove: function(swiper){		//手动滑动中触发
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+
+
+            if(mySwiper.translate < 50 && mySwiper.translate > 0) {
+                $(".init-loading").html('下拉刷新...').show();
+            }else if(mySwiper.translate > 50 ){
+                $(".init-loading").html('释放刷新...').show();
+            }
+        },
+        onTouchEnd: function(swiper) {
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+            // 上拉加载
+            if(mySwiper.translate <= _viewHeight - _contentHeight - 50 && mySwiper.translate < 0) {
+                // console.log("已经到达底部！");
+
+                if(loadFlag){
+//                    $(".loadtip").html('正在加载...');
+                    $(document).scrollTop($(document).height()-$(window).height());
+                    $(".spinner").css("display","block");
+                }else{
+                    $(".loadtip").html('没有更多啦！');
+                }
+
+                setTimeout(function() {
+                    for(var i = 0; i <3; i++) {
+                        oi++;
+                        $(".order_con:last-child").eq(mySwiper2.activeIndex).append('' +
+                                '<div class="con_list">'+
+                                '<div class="am-g con_top">'+
+                                '<div class="am-u-sm-8 txt_gray">订单号：127 4856 6000 45</div>'+
+                                '<div class="am-u-sm-4 txt_right txt_gray">2018-02-08</div>'+
+                                '</div>'+
+                                '<div class="con_cen">'+
+                                '<ul>'+
+                                '<li>'+
+                                '<div class="am-g">'+
+                                '<div class="am-u-sm-3 order_img">'+
+                                '<img src="imgs/exp01.jpg" alt="" title="">'+
+                                '</div>'+
+                                '<div class="am-u-sm-9 order_detaile">'+
+                                '<p class="pro_name">羽衣甘蓝原叶</p>'+
+                                '<p class="pro_det txt_gray">0农药无残留 新鲜采摘 农场直销</p>'+
+                                '<div class="am-g order_num">'+
+                                '<div class="am-u-sm-6 txt_gray">数量：1份</div>'+
+                                '<div class="am-u-sm-6 txt_right"><mark>￥20.90</mark></div>'+
+                                '</div>'+
+                                '</div>'+
+                                '</div>'+
+                                '</li>'+
+                                '</ul>'+
+                                '</div>'+
+                                '<div class="am-g con_bot">'+
+                                        '<div class="am-u-sm-6"><mark>已付款</mark></div>'+
+                                '<div class="am-u-sm-6 txt_right">合计：<mark>￥41.80</mark></div>'+
+                                '</div>'+
+                                '</div>');
+                        }
+                    mySwiper.update(); // 重新计算高度;\
+//                  $(document).scrollTop($(document).height()-$(window).height());
+                    $(".spinner").css("display","none");
+                }, 1000);
+            }
+
+            // 下拉刷新
+            if(mySwiper.translate >= 50) {
+                $(".init-loading").html('正在刷新...').show();
+                $(".loadtip").html('上拉加载更多');
+                loadFlag = true;
+
+                setTimeout(function() {
+                    $(".refreshtip").show(0);
+                    $(".init-loading").html('刷新成功！');
+                    setTimeout(function(){
+                        $(".init-loading").html('').hide();
+                    },500);
+                    $(".loadtip").show(0);
+
+                    //刷新操作
+                    mySwiper.update(); // 重新计算高度;
+                }, 500);
+            }else if(mySwiper.translate >= 0 && mySwiper.translate < 50){
+                $(".init-loading").html('').hide();
+            }
+            return false;
+        }
+    });
+    var mySwiper2 = new Swiper('.swiper-container2');
+
+</script>
+</body>
+</html>

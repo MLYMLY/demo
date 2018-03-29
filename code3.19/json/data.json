@@ -1,0 +1,54 @@
+
+    {
+      "order":[
+        {
+          "num": "55622953235",
+          "data":"2018-12-25",
+          "data": {
+            "data1b": {
+                "url": "img/exp01.jpg",
+                "pro_name": "羽衣甘蓝原叶",
+                "pro_detail":"0农药无残留 新鲜采摘 农场直销",
+                "pr_num": 3,
+                "money": 652.25
+              },
+              "data2b": {
+                "url": "img/exp01.jpg",
+                "pro_name": "羽衣甘蓝原叶",
+                "pro_detail":"0农药无残留 新鲜采摘 农场直销",
+                "pr_num": 4,
+                "money": 65.00
+              }
+          }
+        },
+        {
+          "num": "239855986236",
+          "data":"2018-12-05",
+          "data": {
+            "data1b": {
+              "url": "img/exp01.jpg",
+              "pro_name": "羽衣甘蓝原叶",
+              "pro_detail": "0农药无残留 新鲜采摘 农场直销",
+              "pr_num": 3,
+              "money": 652.25
+            }
+          }
+        },
+        {
+          "num": "465629659562",
+          "data":"2018-02-05",
+          "data": {
+            "data1b": {
+              "url": "img/exp01.jpg",
+              "pro_name": "羽衣甘蓝原叶",
+              "pro_detail": "0农药无残留 新鲜采摘 农场直销",
+              "pr_num": 3,
+              "money": 652.25
+            }
+          }
+        }
+      ]
+    }
+
+
+

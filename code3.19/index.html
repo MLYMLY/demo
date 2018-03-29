@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+
+    <title>首页</title>
+    <link rel="stylesheet" href="./files/amazeui.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+<body>
+    <header class="person_header">
+        <div class="am-g am-g-fixed">
+            <div class="am-u-sm-2 per_icon">
+                <a href="##">
+                    <img src="imgs/per_person.png" alt="" title="">
+                </a>
+            </div>
+            <div class="am-u-sm-8">
+                <div class="per_images">
+                    <img src="imgs/per_images.jpg" alt="" title="">
+                </div>
+                <ul class="per_detail">
+                    <li class="det_tel">18855656587</li>
+                    <li class="det_balance">账户余额</li>
+                    <li class="det_money">￥156.32</li>
+                </ul>
+            </div>
+            <div class="am-u-sm-2 per_icon per_icon_set">
+                <a href="##">
+                    <img src="imgs/per_set.png" alt="" title="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav_list">
+        <div class="am-g am-g-fixed">
+            <a href="voucherCenter.html">
+                <div class="am-u-sm-6">
+                    <span class="nav_recharge">充值中心</span>
+                </div>
+            </a>
+            <a href="order_r.html">
+                <div class="am-u-sm-6">
+                    <span class="nav_order">我的订单</span>
+                </div>
+            </a>
+        </div>
+        <div class="am-g am-g-fixed">
+            <div class="am-u-sm-6">
+                <span class="nav_giftCard">礼品卡</span>
+            </div>
+            <div class="am-u-sm-6">
+                <span class="nav_service">联系客服</span>
+            </div>
+        </div>
+
+        <div class="open_code">
+            <img src="imgs/open_wx.png" alt="" title="">
+        </div>
+    </div>
+
+    <!--解锁成功的弹框-->
+    <div class="zhezao"></div>
+    <a href="cart.html">
+        <div class="success_lock" id="success_lock">
+            <ul>
+                <li><img src="imgs/lock_bg.jpg"></li>
+                <li class="txt_big">解锁成功</li>
+                <li class="txt_normal">— 请开门挑你喜欢的商品 —</li>
+                <li class="txt_pink">关门时请确认门锁落下</li>
+            </ul>
+        </div>
+    </a>
+
+
+    <!--底部导航-->
+    <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default am-no-layout" id="wst-footer" style="border-top:1px solid #D1D1D3;">
+        <ul class="am-navbar-nav am-cf am-avg-sm-4" style="background-color:white;">
+            <li>
+                <a href="http://localhost/plat/Home/Index/index.html" class="footer-link" id="home">
+                    <img class="wst-footer-img" src="./files/home.png" style="width:24px;height:40px;">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="javascript:toGoodsCat(440100);" class="footer-link" id="category">
+                    <img class="wst-footer-img" src="./files/category.png" style="width:24px;height:40px;">
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/plat/Home/Cart/index.html" class="footer-link">
+                    <img class="wst-footer-img" src="./files/cart.png" style="width:24px;height:40px;">
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/plat/Home/Users/index.html" class="footer-link" id="users">
+                    <img class="wst-footer-img" src="./files/users-active.png" style="width:24px;height:40px;">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+<script type="text/javascript" src="./files/jquery.min.js.下载"></script>
+<!--<script type="text/javascript">-->
+    <!--var ThinkPHP = window.Think = {-->
+        <!--"ROOT": "/plat",-->
+        <!--"APP": "/plat/index.php",-->
+        <!--"PUBLIC": "/plat/Public",-->
+        <!--"DEEP": "/",-->
+        <!--"MODEL": ["1", "", "html"],-->
+        <!--"VAR": ["m", "c", "a"]-->
+    <!--}-->
+    <!--var rooturl = "/plat";-->
+    <!--var defaultAreaName = "";//默认城市-->
+    <!--var defaultAreaId = "";//默认城市的id-->
+    <!--var areaId2 = "";//当前城市-->
+    <!--var areaName2 = "";//当前城市的id-->
+    <!--var provinceId = "";//当前城市所在省份的id-->
+    <!--var wstLatitude = "23.125177";-->
+    <!--var wstLongitude = "113.28064";-->
+    <!--var locationFrom = "cookie";-->
+    <!--var gaodeurl = "http://webapi.amap.com/maps?v=1.3&key=b08c0e3bf90e1122a0fa628c33d72201&callback=mapCallback";//高德地图URL和密钥-->
+
+    <!--function nextCheck() {-->
+        <!--var chestSn = "";-->
+        <!--$("#info").empty();-->
+        <!--$("#info").hide();-->
+        <!--$('#wst-default-loading').modal();-->
+
+        <!--$('.nextCheck').addClass('paytypeactive');-->
+        <!--var type = $('#typeValue').val();-->
+
+        <!--$(".last-list").html("");-->
+        <!--$.post(url, {chestSn: chestSn, type: type},-->
+                <!--function (g) {-->
+                    <!--var k = "";-->
+                    <!--var h = WST.toJson(g);-->
+                    <!--$('#wst-default-loading').modal('close');-->
+                    <!--$('#info').show();-->
+
+                    <!--$("#info").html(h.msg);-->
+                    <!--$('#infoi').hide();-->
+                    <!--$('#infon').hide();-->
+                    <!--if (h.msg) {-->
+                        <!--$('.nextCheck').removeClass('paytypeactive');-->
+                    <!--}-->
+                    <!--wstMsg(h.msg);-->
+
+
+                <!--})-->
+
+
+    <!--}-->
+
+    <!--function changeType(a) {-->
+        <!--$("#info").empty();-->
+        <!--$("#info").hide();-->
+        <!--if (a == 1) {-->
+            <!--$('.type1').addClass("active");-->
+            <!--$('.type2').removeClass("active");-->
+        <!--} else if (a == 2) {-->
+            <!--$('.type2').addClass("active");-->
+            <!--$('.type1').removeClass("active");-->
+        <!--}-->
+        <!--$("#typeValue").val(a);-->
+    <!--}-->
+<!--</script>-->
+<!--<script src="./files/think.js.下载"></script>-->
+<script src="./files/amazeui.min.js.下载"></script>
+<!--<script src="./files/fastclick.min.js.下载"></script>-->
+<!--<script src="./files/echo.min.js.下载"></script>-->
+
+<script type="text/javascript">
+    // 弹框
+    $(".open_code").click(function(){
+        var win_height=$(window).height();
+        $("#success_lock").css("top",(win_height-294)/2+"px").fadeToggle();
+        $(".zhezao").fadeToggle();
+    });
+    $(".zhezao").click(function(){
+        $(this).fadeToggle();
+        $("#success_lock").fadeToggle();
+    });
+
+    //动态登录
+    $(".det_tel").text(localStorage.getItem(name));
+</script>
+</body>
+</html>

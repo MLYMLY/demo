@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/fakeLoader.css">
+</head>
+<body>
+<div class="fakeloader"></div>
+<div>我加点覅规范的地方感觉哦电饭锅</div>
+</body>
+<script type="text/javascript" src="./files/jquery.min.js.下载"></script>
+<script src="./js/fakeLoader.min.js"></script>
+
+<script type="text/javascript">
+    //预加载
+    $(document).ready(function(){
+        $(".fakeloader").fakeLoader({
+            timeToHide:200,
+            bgColor:"#fff",
+            spinner:"spinner3"
+        });
+    });
+</script>
+</html>

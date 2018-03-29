@@ -1,0 +1,163 @@
+body {
+  background: #F8F8F8;
+  font-size: 1.3rem;
+  color: #333;
+}
+a {
+  color: #333;
+  font-size: 1.5rem;
+}
+.cart-list {
+  background: white;
+  margin: 10px 0px 5px 0px;
+}
+.shopinfo {
+  width: 100%;
+  padding: 2px 0px 2px 10px;
+  border-top: 1px solid #E2E2E2;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+.cart-goodsname {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+.shopfee {
+  display: block;
+  background: #F8F8F8;
+  font-size: 1.4rem;
+  padding-left: 30px;
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  color: #2EA591;
+}
+.shopdetails {
+  border-bottom: 1px solid #E2E2E2;
+  padding: 8px 10px;
+}
+.shopdetails.no-stock {
+  border: 1px solid red;
+}
+.shop-check-icon {
+  color: #C9C9C9;
+  margin-right: 6px;
+  font-size: 20px;
+  width:20px;
+	height: 20px;-webkit-border-radius: 100px;background-color: #C9C9C9;
+  cursor: pointer;
+}
+.check-icon {
+ 
+  width:27px;
+   height:27px;
+ -webkit-border-radius: 100px;
+background-image: url(/plat/Apps/Home/View/default/images/dot01.png);
+background-size:contain;
+  cursor: pointer;
+  
+}
+.cart-goodsimg {
+  width: 100%;
+  max-width: 100px;
+  min-width: 50px;
+  max-height: 65px;
+}
+.align-right {
+  text-align: right;
+}
+.shopdetails-checkicon {
+  padding-top: 10px;
+}
+.cartinfo-top {
+  height: 40px;
+}
+.am-icon-check-circle.active{
+ 
+   width:27px;
+   height:27px;
+	-webkit-border-radius: 100px;
+	background-image: url(/plat/Apps/Home/View/default/images/dot02.png);
+	background-size:contain;
+ cursor: pointer;
+}
+.buy-area {
+  position: fixed;
+  z-index: 999;
+  height: 50px;
+  bottom: 39px;
+}
+.total-money-area {
+  height: 40px;
+}
+.total-money-area.tosubmit {
+  background: #404040;
+}
+.total-money-area.todel {
+  background: #858585;
+}
+.total-money {
+  color: white;
+  font-size: 20px;
+}
+.total-icon {
+  margin-left: 15px;
+  margin-right: 5px;
+  width:27px;
+   height:27px;
+	-webkit-border-radius: 100px;
+	background-image: url(/plat/Apps/Home/View/default/images/dot01.png);
+	background-size:contain;
+  cursor: pointer;
+}
+.buyit {
+  background: #eaa772;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.last-list {
+  margin-bottom: 40px;
+}
+.delit-area {
+  background: #858585;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  padding-top: 5px;
+}
+.delit {
+  background: white;
+  border-radius: 10px;
+  color: #F36C2C;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+.cart-action {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.cart-empty {
+  position: fixed;
+  bottom: 200px;
+  z-index: 9999;
+}
+.user-cart {
+  color: #969696;
+  font-size: 10em;
+}
+.cart-empty-tips {
+  display: block;
+  font-size: 2em;
+}
+.goods-cnt-input {
+  display: none;
+  width: 40px;
+  padding: 3px 0px;
+  text-align: center;
+  border: 1px solid #ccc;
+}

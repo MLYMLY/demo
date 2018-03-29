@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+                    $.ajax({
+                        dataType: 'json',
+                        url: 'data.json',
+                        success: function(data) {
+                            var dataObj = eval(data);
+                            $.each(dataObj.order,function(order,i){
+                                console.log(i.num);
+                                var data = i.data;
+                                if (data){
+                                    var data1b=data.data1b;
+                                    if (data1b) {
+                                        var feed = data1b.data1b;
+                                        //直接遍历
+                                        for (key in data1b) {
+                                            console.log(data1b[key]);
+                                        }
+                                    }
+                                    var data2b = data.data2b;
+                                    if (data2b) {
+                                        var feed = data2b.data1b;
+                                        //直接遍历
+                                        for (key in data2b) {
+                                            console.log(data2b[key]);
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    });
+                }
+        );
+    </script>
+</head>
+<body>
+<div id="ediv"></div>
+</body>
+</html>

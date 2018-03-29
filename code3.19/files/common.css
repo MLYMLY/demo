@@ -1,0 +1,110 @@
+/* 导航 */
+.wst-nav {
+	width: 100%;
+	height: 50px;
+	background-color: #eaa772;
+	border-bottom: 1px solid #eaa772;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.wst-nav-left {
+	text-align: left;
+	padding-top: 12px;
+	color: white;
+}
+.wst-nav-left a {
+	color: white;
+}
+.wst-nav-center {
+	text-align: center;
+	padding-top: 8px;
+}
+.wst-home-search {
+	min-width: 160px;
+	cursor: pointer;
+}
+.wst-nav-right {
+	text-align: right;
+	padding-top: 12px;
+	cursor: pointer;
+}
+.city-icon {
+	height: 16px;
+}
+.wst-back {
+	display: inline-block;
+    text-align: center;
+    width: 25px;
+}
+/* 页面主体 */
+.page-container {
+	padding-top: 50px;
+}
+
+/* 内页导航 */
+.wst-inner-page-nav {
+	background-color: #eaa772;
+	border-bottom: 1px solid #eaa772;
+}
+.device-container {
+  text-align: center;
+  margin: 5px 0px;
+}
+.wst-device {
+  font-size: 2.5rem;
+}
+.wst-mobile {
+  color: green;
+}
+.wst-pc {
+  color: #eaa772;
+}
+.device-text {  
+  display: block;
+  font-size: 1.3rem; 
+  width: 100%; 
+  text-align: center; 
+}
+/* 提示框 */
+.wst-msg-modal {
+	display: none;
+	position: fixed;
+	bottom: 65px;
+	z-index: 9999;
+}
+.wst-modal-content {
+	background: #4C4C4C;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+/* 选择城市页 */
+.wst-city {
+	margin-left: 15px;
+	color: black;
+}
+.wst-page-container {
+	margin-top: 48px;
+}
+.wst-to-top {
+	display: none;
+	background-color: rgba(238,238,238,.8);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    position: fixed;
+    right: 10px;
+    bottom: 90px;
+    text-align: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+.wst-to-top-icon {
+	font-size: 20px;
+	color: #F36C2C;
+	margin-top: 3px;
+}

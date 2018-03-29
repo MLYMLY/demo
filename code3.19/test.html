@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .pswp__preloader__icn {
+            opacity:0.75;
+            width: 24px;
+            height: 24px;
+            -webkit-animation: clockwise 1000ms linear infinite;
+            animation: clockwise 1000ms linear infinite;
+        }
+
+        /* The idea of animating inner circle is based on Polymer loading indicator by Keanu Lee https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html */
+        .pswp__preloader__cut {
+            width: 12px;
+            height: 24px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .pswp__preloader__donut {
+            width: 24px;
+            height: 24px;
+            background: url("./imgs/loading_bg.png") no-repeat center;
+            background-size: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin:0;
+            -webkit-animation: donut-rotate 1000ms cubic-bezier(.4,0,.22,1) infinite;
+            animation: donut-rotate 1000ms cubic-bezier(.4,0,.22,1) infinite;
+        }
+
+        @-webkit-keyframes clockwise {
+            0% { -webkit-transform: rotate(0deg) }
+            100% { -webkit-transform: rotate(360deg) }
+        }
+        @keyframes clockwise {
+            0% { transform: rotate(0deg) }
+            100% { transform: rotate(360deg) }
+        }
+        @-webkit-keyframes donut-rotate {
+            0% { -webkit-transform: rotate(0deg) }
+            50% { -webkit-transform: rotate(0deg) }
+            100% { -webkit-transform: rotate(0deg) }
+        }
+        @keyframes donut-rotate {
+            0% { transform: rotate(0deg) }
+            50% { transform: rotate(0deg) }
+            100% { transform: rotate(0deg) }
+        }
+    </style>
+</head>
+<body>
+<div class="pswp__preloader__icn">
+    <div class="pswp__preloader__cut">
+        <div class="pswp__preloader__donut"></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="./files/jquery.min.js.下载"></script>
+<script type="text/javascript">
+
+</script>
+</html>
